@@ -2,7 +2,7 @@ function isNum(arr){
     let numArray = [];
 
     for(let i = 0; i < arr.length; i++){
-        if (typeof arr[i] === 'number'){
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])){
             numArray.push(arr[i]);
         }
     }
