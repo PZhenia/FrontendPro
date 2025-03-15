@@ -4,14 +4,10 @@ const user1 = {
     age: 20,
     location: 'New York',
     displayUserData(){
-        let i = 0;
-        let keys = Object.keys(user1);
-
         for(let key in user1){
-            if(i < keys.length - 1){
+            if(typeof this[key] !== 'function'){
                 console.log(`${key}: ${this[key]}`);
             }
-            i++;
         }
     }
 }
@@ -24,7 +20,7 @@ const user2 = {
     age: 32,
     location: 'Kyiv',
     displayUserData(){
-        console.log(`${user2.name}, ${user2.age} years old, ${user2.location}`);
+        console.log(`${this.name}, ${this.age} years old, ${this.location}`);
     }
 }
 user2.displayUserData();
@@ -36,8 +32,11 @@ const user3 = {
     age: 16,
     location: 'London',
     displayUserData(){
-        let ent = Object.entries(user3).slice(0,-1);
-        ent.forEach(([key, value])=> {console.log(`${key}: ${value}`);});
+        let ent = Object.entries(user3);
+        ent.forEach(([key, value])=> {
+            if(typeof this[key] !== 'function'){
+                console.log(`${key}: ${value}`);
+            }});
     }
 }
 user3.displayUserData();
