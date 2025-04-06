@@ -50,8 +50,8 @@ function updateLocalStorage() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function deleteTask(task){
-    tasks.splice(tasks.indexOf(task), 1);
+function deleteTask(index){
+    tasks.splice(index, 1);
     updateLocalStorage();
     renderTasks();
 }
