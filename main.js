@@ -13,6 +13,10 @@ class Calculator {
     }
 
     divide(num1, num2) {
+        if(num2 === 0){
+            console.log('Cannot be divided by 0');
+            return undefined;
+        }
         return num1 / num2;
     }
 }
