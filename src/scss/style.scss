@@ -1,0 +1,73 @@
+$gray-color: #808080;
+$dark-gray: #696969;
+$light-gray: #F5F5F5;
+$focus-color: #C45B1D;
+
+body {
+  background: linear-gradient(90deg,rgba(125, 46, 0, 1) 0%, rgba(237, 140, 83, 1) 50%, rgba(125, 46, 0, 1) 100%);
+}
+
+.post {
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+
+  h4 {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.open-comments {
+  margin-bottom: 20px;
+  background-color: white;
+  color: $gray-color;
+  border: none;
+  font-size: 18px;
+}
+
+.comment {
+  border-radius: 10px;
+  background-color: $light-gray;
+  padding: 20px;
+}
+
+form {
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 15px;
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+
+  input {
+    border-radius: 10px;
+    border: 1px solid $gray-color;
+    padding: 10px;
+    font-size: 18px;
+
+    &:focus {
+      outline: 2px solid $focus-color;
+    }
+  }
+
+  button {
+    border-radius: 10px;
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    background-color: $dark-gray;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 18px;
+  }
+}

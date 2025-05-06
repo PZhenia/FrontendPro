@@ -1,0 +1,67 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+body {
+  background: linear-gradient(90deg, rgb(125, 46, 0) 0%, rgb(237, 140, 83) 50%, rgb(125, 46, 0) 100%);
+}
+
+.post {
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+.post h4 {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.open-comments {
+  margin-bottom: 20px;
+  background-color: white;
+  color: #808080;
+  border: none;
+  font-size: 18px;
+}
+
+.comment {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+form {
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 15px;
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+}
+form input {
+  border-radius: 10px;
+  border: 1px solid #808080;
+  padding: 10px;
+  font-size: 18px;
+}
+form input:focus {
+  outline: 2px solid #C45B1D;
+}
+form button {
+  border-radius: 10px;
+  width: 15%;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  background-color: #696969;
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 18px;
+}
